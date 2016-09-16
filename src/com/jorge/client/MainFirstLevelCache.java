@@ -34,7 +34,7 @@ public class MainFirstLevelCache {
 		logger.debug("creating entity manager factory");
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("helloworld"); // Second-Level cache 
 		logger.debug("creating entity manager");
-		EntityManager em = emf.createEntityManager(); //First-Level cache
+		EntityManager em = emf.createEntityManager(); //Represents first-Level cache
 		
 		logger.debug("getting transaction");
 		EntityTransaction txn = em.getTransaction(); 
